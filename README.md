@@ -24,16 +24,17 @@ Database Structure
 
 Database Name: summer_internship_db
 Table Name: internship
+| Column Name | Data Type                         | Description     |
+| ----------- | --------------------------------- | --------------- |
+| s.no        | INT (Auto Increment, Primary Key) | Unique ID       |
+| Name        | TEXT                              | Student Name    |
+| Age         | INT                               | Student Age     |
+| Gender      | VARCHAR                           | Gender          |
+| Email       | VARCHAR                           | Email           |
+| Phone       | VARCHAR                           | Phone Number    |
+| query       | TEXT                              | Student Query   |
+| date_time   | DATETIME                          | Submission Time |
 
-Column Name	Data Type	Description
-s.no	INT (Auto Increment, Primary Key)	Unique ID
-Name	TEXT	Student Name
-Age	INT	Student Age
-Gender	VARCHAR	Gender
-Email	VARCHAR	Email
-Phone	VARCHAR	Phone Number
-query	TEXT	Student Query
-date_time	DATETIME	Submission Time
 SQL Table Creation Query
 CREATE TABLE `internship` (
   `s.no` INT AUTO_INCREMENT PRIMARY KEY,
@@ -45,6 +46,7 @@ CREATE TABLE `internship` (
   `query` TEXT NOT NULL,
   `date_time` DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
 How to Run the Project
 Install XAMPP
 Start Apache and MySQL
@@ -57,11 +59,12 @@ Create table using SQL query above
 
 Copy project folder to:
 
-C:\xampp\htdocs\
+D:\xampp\htdocs\
 
 Open browser and run:
 
 http://localhost/php_project1/index.php
+
 CRUD Operations Used
 Insert Data
 INSERT INTO internship (Name, Age, Gender, Email, Phone, query)
