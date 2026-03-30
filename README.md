@@ -48,23 +48,16 @@ CREATE TABLE `internship` (
 );
 
 How to Run the Project
-Install XAMPP
-Start Apache and MySQL
-Open phpMyAdmin
-
-Create database:
-
+1.Install XAMPP
+2.Start Apache and MySQL
+3.Open phpMyAdmin
+4.Create database:
 summer_internship_db
-Create table using SQL query above
-
-Copy project folder to:
-
+5.Create table using SQL query above
+6.Copy project folder to:
 D:\xampp\htdocs\
-
-Open browser and run:
-
+7.Open browser and run:
 http://localhost/php_project1/index.php
-
 CRUD Operations Used
 Insert Data
 INSERT INTO internship (Name, Age, Gender, Email, Phone, query)
